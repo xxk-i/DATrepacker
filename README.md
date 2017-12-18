@@ -6,6 +6,7 @@ These can be packed into dataXXX.cpk's and loaded into the game.
 
 Here's a demo of what is possible:
 https://youtu.be/vMHKLMD3cNo
+(Playing as the Commander)
 
 
 
