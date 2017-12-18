@@ -5,5 +5,6 @@ Takes all the files within a given directory and repacks them into a .dat/.dtt f
 These can be packed into dataxxx.cpk's and loaded into the game.
 
 Written by evanlaird
+https://github.com/evanlaird
 
 Usage: dat_repacker.py directory
