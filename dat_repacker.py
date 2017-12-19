@@ -250,7 +250,6 @@ def main():
 
     write_header(fp, in_dir)
     glom_on_files(fp, in_dir)
-    #print("suck my ass")
 
 #=========
 if __name__ == '__main__':
