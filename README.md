@@ -11,7 +11,6 @@ https://youtu.be/vMHKLMD3cNo
 
 
 
-Written by evanlaird
-https://github.com/evanlaird
+Written by my brother
 
 Usage: dat_repacker.py directory
