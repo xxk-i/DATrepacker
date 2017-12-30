@@ -13,4 +13,4 @@ https://youtu.be/vMHKLMD3cNo
 
 Written by my brother
 
-Usage: dat_repacker.py directory
+Usage: `python repacker.py directory`
