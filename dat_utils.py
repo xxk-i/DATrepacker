@@ -196,7 +196,8 @@ class Writer:
             for file in pi.fileNames:
                 fp.write(paddedBytes(pi.fileSizes[file]))
 
-            # CRC table (just nuls)
+            # CRC table (first byte must not be NUL (or crash), rest doesn't matter)
+            fp.write(b'\x99')
             fp.write(b'\x00' * pi.crcTableSize)
 
             for file in pi.fileNames:
