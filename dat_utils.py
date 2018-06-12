@@ -198,7 +198,7 @@ class Writer:
 
             # CRC table (first byte must not be NUL (or crash), rest doesn't matter)
             fp.write(b'\x99')
-            fp.write(b'\x00' * pi.crcTableSize)
+            fp.write(b'\x00' * (pi.crcTableSize - 1))
 
             for file in pi.fileNames:
                 fullPath = os.path.join(pi.directory, file)
