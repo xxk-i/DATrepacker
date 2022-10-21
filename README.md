@@ -11,7 +11,7 @@ Q: Why bother, is file duping really that important?
 
 A: Nope! Doesn't matter at all! The file duping PlatinumGames does is *completely useless* and probably a bug! It exists only for the purpose of padding out the hashmap and *shouldn't have ever* actually duplicated the data of the contained files themselves -- ESPECIALLY when the file format supports just reusing data offsets. Don't care about arbitrary file accuracy? Then use [🤌 mamma mia 🤌](https://github.com/Petrarca181/YAMMR).
 
-Usage: `python dat.py <directory> (-d)`
+Usage: `python dat.py <directory> [-d]`
 
 Thanks to:
  - My Brother (Helped me write the original 5 years ago)
