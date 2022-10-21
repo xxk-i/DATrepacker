@@ -155,7 +155,7 @@ class DAT:
         
         # Sizes
         for name in self.hash_info.filenames:
-            size = os.path.getsize(in_dir + "/" + name)
+            size = os.path.getsize(self.in_dir + "/" + name)
             ioUtils.write_Int32(f, size)
         
         # Hashmap
@@ -175,7 +175,7 @@ class DAT:
 
         # Open files, write files
         for name in self.hash_info.filenames:
-            current_file = open(in_dir + "/" + name, "rb")
+            current_file = open(self.in_dir + "/" + name, "rb")
             data = current_file.read()
             f.write(data)
             ioUtils.write_padding16(f, f.tell())
