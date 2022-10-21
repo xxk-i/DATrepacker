@@ -1,7 +1,5 @@
 import os
-from re import I, X
 import sys
-from typing import IO
 import zlib
 import ioUtils
 
