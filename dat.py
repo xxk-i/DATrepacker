@@ -99,11 +99,12 @@ class HashInfo:
         return size
 
 class DAT:
-    def __init__(self, in_dir, dupe):
+    def __init__(self, in_dir, dupe, outdir):
         self.in_dir = in_dir
+        self.outdir = outdir
         self.extensions = []
         in_files = os.listdir(in_dir)
-        
+
         if len(in_files) == 0:
             print("Input directory is empty, exiting")
             sys.exit(1)
@@ -112,7 +113,7 @@ class DAT:
         self.longest_name_length = self.get_longest_name_length()
 
     def pack(self):
-        outfile = self.in_dir + ".dat"
+        outfile = self.outdir
 
         f = open(outfile, "wb+")
 
@@ -241,9 +242,9 @@ if __name__ == "__main__":
         flag = sys.argv[2]
         if flag == "-d":
             dupe = True
-        
+
         else:
             print("Unknown 3rd arg, ignoring")
 
-    DAT_file = DAT(in_dir, dupe)
+    DAT_file = DAT(in_dir, dupe, in_dir + ".dat")
     DAT_file.pack()
