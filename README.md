@@ -20,3 +20,4 @@ Thanks to:
  - WoefulWolf (NieR2Blender2NieR & ioUtils.py that this repo shamelessly yoinks)
  - 💖RaiderB💖
 
+If you have any questions, you contact me on discord at @grojdg or on NexusMods @ff7awesomeness
