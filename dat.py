@@ -50,12 +50,12 @@ class HashInfo:
 
         return duped_names
 
+    #thanks raiderb!
     def calculate_shift(self):
-        for i in range(31):
-            if 1 << i >= len(self.in_files):
-                return 31 - i
-        
-        return 0
+        count = len(self.in_files)
+        if count <= 1:
+            count += 1
+        return max(24, 32 - count.bit_length())
 
     #thanks petrarca :)
     def generate_info(self):
